@@ -44,7 +44,7 @@ bool radio_available() {
 
 // Return package
 NRF5_ESB_Packet radio_getpkg() {
-  return rx_circular_buffer.pop();
+  return rx_circular_buffer.shift();
 }
 
 
